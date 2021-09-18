@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @shc0743
 - 👀 I’m interested in ...
-- 🌱 I’m currently learning ... cpp,python
+- 🌱 I’m currently learning ... cpp,python,java
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ... shc0743@outlook.com
 
