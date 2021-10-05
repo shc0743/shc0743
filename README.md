@@ -1,19 +1,33 @@
 ![shc0743's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shc0743&line_height=35)
 ![shc0743's Github Stats](https://github-readme-stats.vercel.app/api?username=shc0743&show_icons=true&count_private=true&line_height=33.5)
 
-<!--
-# 我正在开发的项目
+<!---->
+## 项目
 
-|名称|描述|版本|开发状态|
-|:-:|:-:|:-:|:-:|
-|[MySiteAdmin](https://github.com/shc0743/mysiteadmin)|PHP做的站点管理器|-|咕咕咕|
+|名称|描述|语言|版本|开发状态|
+|:-:|:-:|:-:|:-:|:-:|
+|[CLearn](https://github.com/shc0743/CLearn)|持续更新C++项目(虽然没啥用)|C++|1.14.514|更新中|
+|[MySiteAdmin](https://github.com/shc0743/mysiteadmin)|PHP做的站点管理器|PHP|1.0|咕咕咕|
 
-# 联系我
+## 编程语言
 
-哔哩哔哩: [哔哩哔哩](https://space.bilibili.com/524012243)
+- HTML (入坟)
+- CSS (废)
+- JavaScript (入坟)
+- C/C++ (残废)
+- C# (尝试学习)
+- Java (尝试学习)
+- Unity \(全是[bug](https://github.com/shc0743#bugyyds)\)
+
+## 联系我
+
+<!--哔哩哔哩: [哔哩哔哩](https://space.bilibili.com/524012243)-->
 
 邮箱: shc0743@outlook.com
--->
+<!---->
+
+<!--# ruaaaa~杀~~戮~~光~~环~~-->
+
 <!--
 - 👋 Hi, I’m @shc0743
 - 👀 I’m interested in ...
