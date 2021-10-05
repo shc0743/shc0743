@@ -8,6 +8,7 @@
 |:-:|:-:|:-:|:-:|:-:|
 |[CLearn](https://github.com/shc0743/CLearn)|持续更新C++项目(虽然没啥用)|C++|1.14.514|更新中|
 |[MySiteAdmin](https://github.com/shc0743/mysiteadmin)|PHP做的站点管理器|PHP|1.0|咕咕咕|
+|[shc7432/download](https://shc7432.github.io/download/apps/smallapp)|随便做的H5|H5+JS|???|咕咕咕|
 
 ## 编程语言
 
