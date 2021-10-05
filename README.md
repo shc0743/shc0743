@@ -14,11 +14,11 @@
 
 - HTML (入坟)
 - CSS (废)
-- JavaScript (入坟)
+- JavaScript (入了但没完全入)
 - C/C++ (残废)
 - C# (尝试学习)
 - Java (尝试学习)
-- Unity \(全是[bug](https://github.com/shc0743#bugyyds)\)
+<!--- Unity \(全是[bug](https://github.com/shc0743#bugyyds)\)-->
 
 ## 联系我
 
