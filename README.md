@@ -18,7 +18,7 @@
 - C/C++ (残废)
 - C# (尝试学习)
 - Java (尝试学习)
-<!--- Unity \(全是[bug](https://github.com/shc0743#bugyyds)\)-->
+- Python (尝试学习)
 
 ## 联系我
 
