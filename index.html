@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="zh-cn">
 
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>shc0743's profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--script src="res/js/getUrlValue.js"></script-->
+    <link rel="stylesheet" type="text/css" href="res/css/main.css">
+    <link rel="stylesheet" type="text/css" href="res/css/index-page.css">
+    <script src="res/js/getUrlValue.js"></script>
+    <script src="res/js/vue.js"></script>
+    <script src="res/js/preload.js" defer></script>
     <!--script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script-->
     <style>
@@ -15,6 +19,10 @@
 
 <body>
 
+    <div id=top_lang_change_bar class="top-bar bgcolor-info width-full">
+        This article is also available in <a href="tr/en/">English</a>.
+        <a class="btn close-button" onclick="this.parentElement.remove()"></a>
+    </div>
     <nav></nav>
 
     <main>
@@ -23,7 +31,7 @@
 
     <script>
     (function () {
-
+        top_lang_change_bar.style.width = document.documentElement.clientWidth - 20 + 'px';
     })()
     </script>
 </body>
