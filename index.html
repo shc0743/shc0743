@@ -9,9 +9,7 @@
     <link rel="stylesheet" type="text/css" href="res/css/index-page.css">
     <script src="res/js/getUrlValue.js"></script>
     <script src="res/js/vue.js"></script>
-    <script src="res/js/preload.js" defer></script>
-    <!--script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script-->
+    <script src="res/js/preload.js"></script>
     <style>
 
     </style>
@@ -21,9 +19,13 @@
 
     <div id=top_lang_change_bar class="top-bar bgcolor-info width-full">
         This article is also available in <a href="tr/en/">English</a>.
-        <a class="btn close-button" onclick="this.parentElement.remove()"></a>
+        <a class="btn close-button" onclick="this.parentElement.remove()" title=Close></a>
+        <div class="btn no-show-again" hidden title=不再显示><a href=#>Do not show again</a></div>
     </div>
-    <nav></nav>
+
+    <nav id=nav_bar>
+        <img src="res/i/icon.png" alt="Icon" width="32" height="32" />
+    </nav>
 
     <main>
 
@@ -32,6 +34,20 @@
     <script>
     (function () {
         top_lang_change_bar.style.width = document.documentElement.clientWidth - 20 + 'px';
+        top_lang_change_bar.oncontextmenu = function(e){
+            e.preventDefault();
+            let el = top_lang_change_bar.querySelector('div.no-show-again');
+            if (el) el.hidden = false;
+        }
+        let top_lang_change_bar_nsa = top_lang_change_bar.querySelector('div.no-show-again');
+        if (top_lang_change_bar_nsa) 
+            top_lang_change_bar_nsa.onclick = function () {
+                site_data.top_lang_change_bar_hide = true;
+                site_data.update(true);
+                this.parentElement.remove();
+                return false;
+            }
+        if(site_data.top_lang_change_bar_hide) top_lang_change_bar.remove();
     })()
     </script>
 </body>

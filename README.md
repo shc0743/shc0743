@@ -1,3 +1,6 @@
+[Go to shc0743's blog](https://shc0743.github.io/shc0743/tr/en/)
+
+
 ![shc0743's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shc0743&line_height=35)
 ![shc0743's Github Stats](https://github-readme-stats.vercel.app/api?username=shc0743&show_icons=true&count_private=true&line_height=33.5)
 
