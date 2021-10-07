@@ -31,7 +31,7 @@ function getScrollbarWidth(el = null) {
             this.parentElement.remove();
             return false;
         }
-    if (site_data.top_lang_change_bar_hide) top_lang_change_bar.remove();.
+    if (site_data.top_lang_change_bar_hide) top_lang_change_bar.remove();
 
     let img_icon = document.documentElement.querySelector
         ('body nav#nav_bar a:nth-child(1) img');
