@@ -37,8 +37,10 @@
         enumerable: true,
         configurable: true
     });
-    if (!site_data.language) site_data.language =
-        navigator.language || navigator.browserLanguage;
+    if (!site_data.language) {
+        site_data.language = navigator.language || navigator.browserLanguage;
+        site_data.update(true);
+    }
     window.getRandom = function (min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
