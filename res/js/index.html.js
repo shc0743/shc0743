@@ -101,14 +101,15 @@ window.addEventListener('hashchange', window._m_hash_change_handler = function (
                         return data;
                     }
                 };
-                Vue.createApp(vue_obj).mount("div#settings_dialog");
+                Vue.createApp(vue_obj).mount("div#settings_dialog_sub1");
                 settings_dialog.fetched = true;
             });
         }
         if (hash == '/settings' || hash == '/settings/') {
             location.hash = '/settings/common/'; return;
         }
-        if (hash == '/settings/common' || hash == '/settings/common/') {
+        if (hash == '/settings/common' || hash == '/settings/common/'
+            || hash.substr(0, 17) == '/settings/common/') {
             CreateDialog(settings_dialog);
             return;
         }

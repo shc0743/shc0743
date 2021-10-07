@@ -33,7 +33,8 @@
         <a href="./profile/" disabled> {{Profile}} </a> | 
         <a href="./blog" disabled> {{Blog}} </a> | 
         <a href="./doc/" disabled> {{Document}} </a> | 
-        <a href="./#/settings/common/"> {{Settings}} </a>
+        <a href="#settings" onclick="this.href='#/settings/common/'+
+        getRandom(-2147483648,2147483647)"> {{Settings}} </a>
 
         <span class="right-align" hidden>
             <a href="./">{{Login}}</a> or <a>{{SignUp}}</a> 
@@ -69,24 +70,25 @@
     </div>
 
     <div id=settings_dialog hidden>
-        <dialogtitle>
-            {{settings}}
-            <a class=closebtn v-bind:title="close_btn_title">x</a>
-        </dialogtitle>
+        <div id=settings_dialog_sub1>
+            <dialogtitle>
+                {{settings}}
+                <a class=closebtn v-bind:title="close_btn_title" onclick="location='./'">x</a>
+            </dialogtitle>
 
-        <div class=dlg-content style="display: flex;">
-            <div class=left style="order: 0;flex-basis: 100px;">
-                <button>{{Common}}</button>
-                <button>{{Language}}</button>
-            </div>
-            <div class=right style="order: 1;flex-grow: 1;">
-                <div class=common>
-                    <h2>{{common_settings_bigtitle}}</h2>
+            <div class=dlg-content style="display: flex;">
+                <div class=left style="order: 0;flex-basis: 100px;">
+                    <button>{{Common}}</button>
+                    <button>{{Language}}</button>
+                </div>
+                <div class=right style="order: 1;flex-grow: 1;">
+                    <div class=common>
+                        <h2>{{common_settings_bigtitle}}</h2>
+                    </div>
                 </div>
             </div>
+            <button>保存</button> <button onclick="location='./'">取消</button>
         </div>
-        <button>保存</button>
-
     </div>
 
     <script src="res/js/index.html.js"></script>
