@@ -57,22 +57,25 @@
 
     <script>
     (function () {
-        function getScrollbarWidth() {
+        function getScrollbarWidth(el=null) {
+            if (el) {
+                return el.offsetWidth - el.clientWidth;//相减
+            }
             var odiv = document.createElement('div'),//创建一个div
                 styles = {
                     width: '100px',
                     height: '100px',
-                    overflowY: 'scroll'//让他有滚动条
+                    overflowY: 'scroll'//让她有滚动条
                 }, i, scrollbarWidth;
             for (i in styles) odiv.style[i] = styles[i];
             document.body.appendChild(odiv);//把div添加到body中
-            scrollbarWidth = odiv.offsetWidth - odiv.clientWidth;//相减
+            var scrollbarWidth = odiv.offsetWidth - odiv.clientWidth;//相减
             odiv.remove();//移除创建的div
             return scrollbarWidth;//返回滚动条宽度
         }
         document.querySelector('main').style.top = top_lang_change_bar.clientHeight + 'px';
         top_lang_change_bar.style.width = document.documentElement.clientWidth - 20 - 
-            getScrollbarWidth() + 'px';
+            getScrollbarWidth(document.querySelector('main')) + 'px';
         top_lang_change_bar.oncontextmenu = function(e){
             e.preventDefault();
             let el = top_lang_change_bar.querySelector('div.no-show-again');
@@ -130,6 +133,8 @@
     .then(function(d){return d.text()})
     .then(function(v){
         document.querySelector('#div_show_README').innerHTML = v;
+        top_lang_change_bar.style.width = document.documentElement.clientWidth - 20 - 
+            getScrollbarWidth(document.querySelector('main')) + 'px';
     })
     </script>
 </body>
