@@ -1,13 +1,16 @@
 /* {
 	overflow: auto;
 } */
-a, button, .button, .btn{
+*[disabled] {
+	cursor: not-allowed;
+}
+a, button, .button, .btn {
 	cursor: pointer;
 }
-a{
+a {
 	text-decoration: none;
 	color: blue;
 }
-a:hover{
+a:hover {
 	text-decoration: underline;
 }
