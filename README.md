@@ -1,4 +1,4 @@
-[Go to shc0743's blog](https://shc0743.github.io/shc0743/tr/en/)
+[Go to shc0743's blog](https://shc0743.github.io/shc0743/)
 
 
 ![shc0743's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shc0743&line_height=35)

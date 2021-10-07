@@ -37,7 +37,6 @@
         enumerable: true,
         configurable: true
     });
-    window.addEventListener('beforeunload', function () {
-        UpdateSiteData();
-    });
+    if (!site_data.language) site_data.language =
+        navigator.language || navigator.browserLanguage;
 })(window.self);
