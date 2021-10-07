@@ -32,7 +32,14 @@
 
     <main>
         <div id=div_show_README>
-            
+            <div class="main load-loading">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            Loading...
         </div>
     </main>
 
@@ -91,6 +98,19 @@
             }
         };
         Vue.createApp(vue_obj).mount("main");
+    }, function (e) {
+        console.error("Error while fetch translate: ", e);
+        errdlg_at_fetch_translate.querySelector('div textarea').value = e;
+        errdlg_at_fetch_translate.querySelector('div button.a').onclick = function () {
+            window.close();
+        }
+        errdlg_at_fetch_translate.querySelector('div button.r').onclick = function () {
+            location.reload();
+        }
+        errdlg_at_fetch_translate.querySelector('div button.i').onclick = function () {
+            CreateDialogEx.remove(errdlg_at_fetch_translate);
+        }
+        CreateDialog(errdlg_at_fetch_translate, true);
     });
     fetch("res/tr/zh-CN/html/index.html.main%23div_show_README.html")
     .then(function(d){return d.text()})
