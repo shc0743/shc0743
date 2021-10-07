@@ -94,7 +94,7 @@ window.addEventListener('hashchange', window._m_hash_change_handler = function (
     if (hash.substr(0, 9) == '/settings') {
         if (!settings_dialog.fetched) {
             fetch(translate_location + "index.html.div%settings_dialog.json")
-            .then(function (d) { return d.json(); }, errhandle)
+            .then(function (d) { return d.json(); })
             .then(function (data) {
                 const vue_obj = {
                     data() {
@@ -103,7 +103,7 @@ window.addEventListener('hashchange', window._m_hash_change_handler = function (
                 };
                 Vue.createApp(vue_obj).mount("div#settings_dialog");
                 settings_dialog.fetched = true;
-            }, errhandle);
+            });
         }
         if (hash == '/settings' || hash == '/settings/') {
             location.hash = '/settings/common/'; return;
