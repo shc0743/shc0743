@@ -33,3 +33,7 @@ nav{
 .close-button:hover{
 	text-decoration: underline;
 }
+main{
+	position: absolute;
+	z-index: 0;
+}

@@ -48,6 +48,7 @@
 
     <script>
     (function () {
+        document.querySelector('main').style.top = top_lang_change_bar.clientHeight + 'px';
         top_lang_change_bar.style.width = document.documentElement.clientWidth - 20 + 'px';
         top_lang_change_bar.oncontextmenu = function(e){
             e.preventDefault();
@@ -64,7 +65,7 @@
             }
         if(site_data.top_lang_change_bar_hide) top_lang_change_bar.remove();
     })()
-    fetch("res/tr/json/index.html.zh-CN.json")
+    fetch("res/tr/zh-CN/json/index.html.zh-CN.json")
     .then(function (d) {
         return d.json();
     }, function (e) {
@@ -89,7 +90,7 @@
         };
         Vue.createApp(vue_obj).mount("main");
     });
-    fetch("res/tr/html/index.html.main%23div_show_README.html")
+    fetch("res/tr/zh-CN/html/index.html.main%23div_show_README.html")
     .then(function(d){return d.text()})
     .then(function(v){
         document.querySelector('#div_show_README').innerHTML = v;
