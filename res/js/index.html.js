@@ -85,3 +85,7 @@ translate_location_fetch3.then(function (loc) {
     }, errhandle);
 
 });
+
+window.addEventListener('hashchange', function () {
+    var hash = location.hash;
+})
