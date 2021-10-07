@@ -22,21 +22,21 @@ git add -u .
 git add -A .
 exit /b %ERRORLEVEL%
 
-:commit_retry
-echo Push failed, retry...
 :commit
 if "%2"=="" (
 git commit
 exit /b %ERRORLEVEL%
 )
 git commit -m %2
-set "el=%ERRORLEVEL%"
-if "%el%"=="128" goto commit_retry
-exit /b %el%
+exit /b %ERRORLEVEL%
 
+:push_retry
+echo Push failed, retry...
 :push
 git push
-exit /b %ERRORLEVEL%
+set "el=%ERRORLEVEL%"
+if "%el%"=="128" goto push_retry
+exit /b %el%
 
 :add_commit_push
 cmd /c %0 add

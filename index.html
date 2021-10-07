@@ -133,6 +133,7 @@
     .then(function(d){return d.text()})
     .then(function(v){
         document.querySelector('#div_show_README').innerHTML = v;
+        if(top_lang_change_bar)
         top_lang_change_bar.style.width = document.documentElement.clientWidth - 20 - 
             getScrollbarWidth(document.querySelector('main')) + 'px';
     })
