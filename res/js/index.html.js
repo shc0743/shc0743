@@ -15,7 +15,7 @@ function getScrollbarWidth(el = null) {
     return scrollbarWidth;//返回滚动条宽度
 }
 (function () {
-    document.querySelector('main').style.top = top_lang_change_bar.clientHeight + 'px';
+    document.querySelector('main').style.top = nav_bar.clientHeight + 'px';
     top_lang_change_bar.style.width = document.documentElement.clientWidth - 20 -
         getScrollbarWidth() + 'px';
     top_lang_change_bar.oncontextmenu = function (e) {
