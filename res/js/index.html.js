@@ -14,7 +14,7 @@ function getScrollbarWidth(el = null) {
     odiv.remove();//移除创建的div
     return scrollbarWidth;//返回滚动条宽度
 }
-(function () {
+window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('main').style.top = nav_bar.clientHeight + 'px';
     top_lang_change_bar.style.width = document.documentElement.clientWidth - 20 -
         getScrollbarWidth() + 'px';
@@ -41,7 +41,7 @@ function getScrollbarWidth(el = null) {
         img_icon.setAttribute('width',img_icon_.clientHeight);
         img_icon.setAttribute('height',img_icon_.clientHeight);
     }
-})()
+})
 
 translate_location_fetch3.then(function (loc) {
     // var loc = translate_location;
