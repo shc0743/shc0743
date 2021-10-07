@@ -93,7 +93,7 @@ window.addEventListener('hashchange', window._m_hash_change_handler = function (
     }
     if (hash.substr(0, 9) == '/settings') {
         if (!settings_dialog.fetched) {
-            fetch(translate_location + "index.html.div%settings_dialog.json")
+            fetch(translate_location + "index.html.div%23settings_dialog.json")
             .then(function (d) { return d.json(); })
             .then(function (data) {
                 const vue_obj = {
@@ -115,4 +115,5 @@ window.addEventListener('hashchange', window._m_hash_change_handler = function (
         location.href = './'; return;
     }
 })
-translate_location_fetch3.then(_m_hash_change_handler());
+translate_location_fetch3.then(new Function(
+    `window.addEventListener('load',_m_hash_change_handler)`));
