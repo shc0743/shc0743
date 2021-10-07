@@ -37,6 +37,8 @@ main{
 	position: absolute;
 	z-index: 0;
 	overflow: auto;
+	left: 0;
+	width: 100%;
 }
 main .main.load-loading{
     width: 150px;
