@@ -31,7 +31,16 @@ function getScrollbarWidth(el = null) {
             this.parentElement.remove();
             return false;
         }
-    if (site_data.top_lang_change_bar_hide) top_lang_change_bar.remove();
+    if (site_data.top_lang_change_bar_hide) top_lang_change_bar.remove();.
+
+    let img_icon = document.documentElement.querySelector
+        ('body nav#nav_bar a:nth-child(1) img');
+    let img_icon_ = document.documentElement.querySelector
+        ('body nav#nav_bar a:nth-child(2)');
+    if(img_icon && img_icon_){
+        img_icon.setAttribute('width',img_icon_.clientHeight);
+        img_icon.setAttribute('height',img_icon_.clientHeight);
+    }
 })()
 
 translate_location_fetch3.then(function (loc) {
