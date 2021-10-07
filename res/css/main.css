@@ -2,7 +2,11 @@
 	overflow: auto;
 } */
 *[disabled] {
-	cursor: not-allowed;
+	cursor: not-allowed !important;
+	color:#cccccc;
+}
+a[disabled] {
+	text-decoration: none;
 }
 a, button, .button, .btn {
 	cursor: pointer;
