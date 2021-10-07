@@ -34,7 +34,7 @@ function getScrollbarWidth(el = null) {
     if (site_data.top_lang_change_bar_hide) top_lang_change_bar.remove();
 })()
 
-window.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     let img_icon = document.documentElement.querySelector
         ('body nav#nav_bar a:nth-child(1) img');
     let img_icon_ = document.documentElement.querySelector
