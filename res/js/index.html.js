@@ -115,4 +115,4 @@ window.addEventListener('hashchange', window._m_hash_change_handler = function (
         location.href = './'; return;
     }
 })
-_m_hash_change_handler();
+translate_location_fetch3.then(_m_hash_change_handler());
