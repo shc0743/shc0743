@@ -11,7 +11,7 @@
     <script src="res/js/vue.js"></script>
     <script src="res/js/preload.js"></script>
     <script src="res/tr/translate-def.js"></script>
-    <script src="//shc7432.github.io/public/something/dialog.js"></script>
+    <script src="https://shc7432.github.io/public/something/dialog.js"></script>
     <style>
 
     </style>
@@ -33,7 +33,7 @@
         <a href="./profile/" disabled> {{Profile}} </a> | 
         <a href="./blog" disabled> {{Blog}} </a> | 
         <a href="./doc/" disabled> {{Document}} </a> | 
-        <a href="./#/settings/common/" disabled> {{Settings}} </a>
+        <a href="./#/settings/common/"> {{Settings}} </a>
 
         <span class="right-align" hidden>
             <a href="./">{{Login}}</a> or <a>{{SignUp}}</a> 
@@ -66,6 +66,27 @@
             <button class=r>Retry</button>
             <button class=i>Ignore</button>
         </div>
+    </div>
+
+    <div id=settings_dialog hidden>
+        <dialogtitle>
+            {{settings}}
+            <a class=closebtn v-bind:title="close_btn_title">x</a>
+        </dialogtitle>
+
+        <div class=dlg-content style="display: flex;">
+            <div class=left style="order: 0;flex-basis: 100px;">
+                <button>{{Common}}</button>
+                <button>{{Language}}</button>
+            </div>
+            <div class=right style="order: 1;flex-grow: 1;">
+                <div class=common>
+                    <h2>{{common_settings_bigtitle}}</h2>
+                </div>
+            </div>
+        </div>
+        <button>保存</button>
+
     </div>
 
     <script src="res/js/index.html.js"></script>

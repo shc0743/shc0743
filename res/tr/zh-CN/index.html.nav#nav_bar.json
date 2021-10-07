@@ -1,10 +1,11 @@
 {
-    "icon_title":"shc0743 on GitHub",
-    "Homepage":"主页",
-    "Profile":"个人资料",
-    "Blog":"博客",
-    "Document":"文档",
-    "News":"新鲜事",
-    "BugReport":"反馈",
-    "BugReport_href":"https://github.com/shc0743/shc0743/issues/new"
+    "icon_title": "shc0743 on GitHub",
+    "Homepage": "主页",
+    "Profile": "个人资料",
+    "Blog": "博客",
+    "Document": "文档",
+    "News": "新鲜事",
+    "Settings": "设置",
+    "BugReport": "反馈",
+    "BugReport_href": "https://github.com/shc0743/shc0743/issues/new"
 }

@@ -39,6 +39,7 @@ main{
 	overflow: auto;
 	left: 0;
 	width: 100%;
+	padding: 10px;
 }
 main .main.load-loading{
     width: 150px;
@@ -87,4 +88,19 @@ main .main.load-loading span:nth-child(5){
 	position: absolute;
 	right: 1px;
 	text-align: right;
+}
+#settings_dialog{
+	width: 60%;
+	height: 60%;
+	z-index: 2048;
+}
+#settings_dialog div div{
+	overflow: auto;
+}
+#settings_dialog div div.left{
+	border-right: 1px solid #ccc;
+}
+#settings_dialog div div.left button{
+	display: block;
+	width: 100%;
 }

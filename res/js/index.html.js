@@ -86,6 +86,33 @@ translate_location_fetch3.then(function (loc) {
 
 });
 
-window.addEventListener('hashchange', function () {
-    var hash = location.hash;
+window.addEventListener('hashchange', window._m_hash_change_handler = function () {
+    var hash = location.hash.substr(1);
+    if (!hash || hash.length < 1 || hash[0] != '/') {
+        location.hash = '/'; return;
+    }
+    if (hash.substr(0, 9) == '/settings') {
+        if (!settings_dialog.fetched) {
+            fetch(translate_location + "index.html.div%settings_dialog.json")
+            .then(function (d) { return d.json(); }, errhandle)
+            .then(function (data) {
+                const vue_obj = {
+                    data() {
+                        return data;
+                    }
+                };
+                Vue.createApp(vue_obj).mount("div#settings_dialog");
+                settings_dialog.fetched = true;
+            }, errhandle);
+        }
+        if (hash == '/settings' || hash == '/settings/') {
+            location.hash = '/settings/common/'; return;
+        }
+        if (hash == '/settings/common' || hash == '/settings/common/') {
+            CreateDialog(settings_dialog);
+            return;
+        }
+        location.href = './'; return;
+    }
 })
+_m_hash_change_handler();
