@@ -64,7 +64,7 @@ translate_location_fetch3.then(function (loc) {
         Vue.createApp(vue_obj).mount("main");
     }, errhandle);
 
-    fetch(loc + "html/index.html.main%23div_show_README.html").then(function (d) {
+    fetch(loc + "index.html.main%23div_show_README.html").then(function (d) {
         return d.text();
     }, errhandle).then(function (v) {
         document.querySelector('#div_show_README').innerHTML = v;
