@@ -100,7 +100,7 @@ translate_location_fetch3.then(function (loc) {
 window.addEventListener('hashchange', window._m_hash_change_handler = function () {
     var hash = location.hash.substr(1);
     if (!hash || hash.length < 1 || hash[0] != '/') {
-        location.hash = '/'; return;
+        return;
     }
     if (hash.substr(0, 9) == '/settings') {
         if (!settings_dialog.fetched) {
@@ -121,7 +121,7 @@ window.addEventListener('hashchange', window._m_hash_change_handler = function (
         }
         if (hash == '/settings/common' || hash == '/settings/common/'
             || hash.substr(0, 17) == '/settings/common/') {
-            CreateDialog(settings_dialog);
+            CreateDialog(settings_dialog, true);
             return;
         }
         location.href = './'; return;
