@@ -1,4 +1,4 @@
-**Notice**: I've created a new account @chcs1013 and transferring something to it. Both of the accounts am I using.
+**Notice**: I've created a new account @[chcs1013](https://github.com/chcs1013) and transferring something to it. Both of the accounts am I using.
 
 *Note*: I have just unexpectly lost an USB driver which contained my sensitive information like passwords. That's why I'm changing many things recently.
 
