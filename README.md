@@ -2,6 +2,19 @@
 
 *Note*: I have just unexpectly lost an USB driver which contained my sensitive information like passwords. That's why I'm changing many things recently.
 
+---
+
+```
+星月落下，编织温柔的童话。
+大地丰饶，养育初生的新芽。
+无瑕的少女自人群间穿行，将人之美尽收眼底。
+真我的英桀在末世中起舞，将善与爱贯彻始终。
+人类的律者化作新生的种子，在细枝上绽放人性的飞花。
+那花名为爱莉希雅……人之律者，爱莉希雅。
+```
+
+---
+
 ![shc0743's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shc0743&line_height=35)
 ![shc0743's Github Stats](https://github-readme-stats.vercel.app/api?username=shc0743&show_icons=true&count_private=true&line_height=33.5)
 
