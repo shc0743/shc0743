@@ -1,6 +1,6 @@
-**Notice**: I've created a new account @[chcs1013](https://github.com/chcs1013) and transferring something to it. Both of the accounts am I using.
+<div style="text-align: center; font-weight: bold; color: red; font-size: x-large;">为世界上所有的美好而战！</div>
 
-*Note*: I have just unexpectly lost an USB driver which contained my sensitive information like passwords. That's why I'm changing many things recently.
+**Notice**: I've created a new account @[chcs1013](https://github.com/chcs1013) and transferring something to it. Both of the accounts am I using.
 
 ---
 
