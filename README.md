@@ -3,7 +3,7 @@
 **Notice**: I've created a new account @[chcs1013](https://github.com/chcs1013) and transferring something to it. Both of the accounts am I using.
 
 ---
-
+<!--
 ```
 星月落下，编织温柔的童话。
 大地丰饶，养育初生的新芽。
@@ -14,6 +14,7 @@
 ```
 
 ---
+-->
 
 ![shc0743's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shc0743&line_height=35)
 ![shc0743's Github Stats](https://github-readme-stats.vercel.app/api?username=shc0743&show_icons=true&count_private=true&line_height=33.5)
